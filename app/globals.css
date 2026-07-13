@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background:#f6f6f3; color:#0b0b0b; }
+::selection { background:#d71920; color:white; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *,::before,::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+.container-av { @apply mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12; }
+.focus-ring { @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-avred focus-visible:ring-offset-2; }
